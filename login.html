@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <META http-equiv="cache-control" content="co-cache">
+    <title>Basic Internet</title>
+        <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/main.min.css"type="text/css">
+
+
+    </head>
+
+  $(if chap-id)
+  	<!-- <form name="sendin" action="$(link-login-only)" method="post">
+     <form name="sendin" action="http://www.digi.com/login" method="post">
+  		<input type="hidden" name="username" />
+  		<input type="hidden" name="password" />
+  		<input type="hidden" name="dst" value="$(link-orig)" />
+  		<input type="hidden" name="popup" value="true" />
+  	</form>
+  -->
+  	<script type="text/javascript" src="/md5.js"></script>
+  	
+  $(else)
+  <script type="text/javascript">
+  	<!--
+	function doDigiLogin() {
+	if(document.login.zoneprefix.value == ''){
+  	    document.login.username.value = document.login.zoneprefix.value + document.login.username.value;
+	  } else {
+	    document.login.username.value = document.login.zoneprefix.value + '_' + document.login.username.value;
+	  }
+	document.login.zoneprefix.value = '';
+  	document.login.password.value = document.login.password.value;
+  	document.login.submit();
+  	return false;
+  	}
+
+  	//-->
+  	</script>
+  $(endif)
+
+</head>
+<body class='login'>
+
+<table width="100%" style="margin-top: 10%; border: none;">
+
+    <tr>
+		<td align="center">
+			<button style="width:200px;height:100px;" onclick="window.location.href = 'http://yeboo.com';">FREE INTERNET ACCESS! </button>
+		</td>
+	</tr>
+
+    <tr>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+
+	<tr>
+		<td align="center">
+			<table width="200px" style="border: 1px solid #0C4579; padding: 0px;" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="center" width="100%" style="border: none;">
+						<h4 style="color: #0C4579;">Voucher access for Internet</h4>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="middle" height="100" colspan="2">
+						<form class="vertical-form" name="login" action="$(link-login-only)" method="post" background="#A03472"
+
+						  $(if chap-id)
+							onSubmit="return doLogin()"
+						  $(else)
+							onSubmit="return doDigiLogin()"
+						  $(endif)>
+
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+						<legend>Login Form</legend>
+										<label for="username">Username</label>
+								  <input autocomplete="on" name="username" type="text" value="$(username)" placeholder=" Username" size="15" />
+								  <label for="username">Password</label>
+								  <input autocomplete="off" name="password" type="password" label="false" placeholder=" Password" size="15" />
+								  <input type="hidden" name="zoneprefix" value="SEG" />
+							  
+						<input name="submit" type="submit" value="Login" />
+						<div class='footer'>
+						<br>
+						<p>
+						</p>
+						</div>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+
+	
+	
+	<tr>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<hr width="260px" style="color: #0C4579;">
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<table style="border: none; padding: 0px;" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="center">
+						<img src="img/BasicInternet.png" alt="Basic Internet" style="height: 80px;" />
+					</td>
+					<td align="center">
+						&nbsp;
+					</td>
+					<td align="center">
+						<a href="http://www.basicinternet.org" target="_blank" style="border: none;">
+							<h3 style="color: #0C4579; border: none;">BasicInternet.org</h3>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+
+</table>
+
+</body>
+</html>
